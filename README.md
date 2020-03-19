@@ -1,17 +1,17 @@
-# netdata 繁體中文檔
+# netdata 简体中文
 
-本更新檔以台灣中文資訊用語為主，基於 v1.12 修改。  
+本更新档以简体中文为主，基于 v1.12 修改。  
     
-netdata 是非常實用且即時的效能監視套件，對於每項效能指標不僅標示用途，更詳細說明造成的原因以及影響，只可惜這麼棒的說明全都是英文，所以有了這個專案的產生。
+netdata 是非常实用且即时的效能监视套件，对于每项效能指标不仅标示用途，更详细说明造成的原因以及影响，可惜说明全都是英文，所以有了这个翻译插件。
   
-目前已完成了一部份，將利用時間繼續更新其它部份。  
-  
+目前已完成了一部份，基于https://github.com/jasoncheng7115/netdata-cpatch 修改
+
 &nbsp;&nbsp;
 &nbsp;&nbsp;
 
-## 使用說明
+## 使用说明
 
-請將這四個檔案下載後，覆蓋至路徑 `/usr/share/netdata/web/` ，請先備份，請先備份，請先備份。
+请将这四个档案下载后，覆盖至路径 `/usr/share/netdata/web/` ，请先备份，请先备份，请先备份。
 
  -  dashboard_info.js   
  -  dashboard.js   
@@ -21,42 +21,14 @@ netdata 是非常實用且即時的效能監視套件，對於每項效能指標
 
   
     
-覆蓋完成後請檢查檔案擁有者與群組是否為 `netdata:netdata`，若不是請使用 `chown netdata:netdata 檔名` 調整。
+覆盖完成后请检查档案拥有者与群组是否为 `netdata:netdata`，若不是请使用 `chown netdata:netdata` 调整。
 
 
-完成後，請重新整理網頁，或 Chrome 無效請結束所有 Chrome process 再重新開啟。
+完成后，请重新刷新网页，或 Chrome 无效请关闭浏览器再重新开启。
   
 
 &nbsp;&nbsp;
 &nbsp;&nbsp;
 
-      
-## 畫面範例
 
-
-#### 繁體中文後介面
-&nbsp;&nbsp;
-系統概觀
-![image](https://raw.githubusercontent.com/jasoncheng7115/netdata-cpatch/master/screenshot_01.png)
-&nbsp;&nbsp;
-&nbsp;&nbsp;
-
-&nbsp;&nbsp;
-KSM & NUMA
-![image](https://raw.githubusercontent.com/jasoncheng7115/netdata-cpatch/master/screenshot_02.png)
-&nbsp;&nbsp;
-&nbsp;&nbsp;
-
-&nbsp;&nbsp;
-容器
-![image](https://raw.githubusercontent.com/jasoncheng7115/netdata-cpatch/master/screenshot_03.png)
-&nbsp;&nbsp;
-&nbsp;&nbsp;
-
-
-&nbsp;&nbsp;
-設定
-![image](https://raw.githubusercontent.com/jasoncheng7115/netdata-cpatch/master/screenshot_04.png)
-&nbsp;&nbsp;
-&nbsp;&nbsp;
 
