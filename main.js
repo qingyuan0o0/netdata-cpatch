@@ -1450,7 +1450,7 @@ function headMain(os, charts, duration) {
         head += '<div class="netdata-container" style="margin-right: 10px;" data-netdata="system.io"'
             + ' data-dimensions="in"'
             + ' data-chart-library="easypiechart"'
-            + ' data-title="磁碟讀取"'
+            + ' data-title="磁碟读取"'
             + ' data-width="11%"'
             + ' data-before="0"'
             + ' data-after="-' + duration.toString() + '"'
@@ -1461,7 +1461,7 @@ function headMain(os, charts, duration) {
         head += '<div class="netdata-container" style="margin-right: 10px;" data-netdata="system.io"'
             + ' data-dimensions="out"'
             + ' data-chart-library="easypiechart"'
-            + ' data-title="磁碟寫入"'
+            + ' data-title="磁碟写入"'
             + ' data-width="11%"'
             + ' data-before="0"'
             + ' data-after="-' + duration.toString() + '"'
@@ -1473,7 +1473,7 @@ function headMain(os, charts, duration) {
         head += '<div class="netdata-container" style="margin-right: 10px;" data-netdata="system.pgpgio"'
             + ' data-dimensions="in"'
             + ' data-chart-library="easypiechart"'
-            + ' data-title="磁碟讀取"'
+            + ' data-title="磁碟读取"'
             + ' data-width="11%"'
             + ' data-before="0"'
             + ' data-after="-' + duration.toString() + '"'
@@ -1484,7 +1484,7 @@ function headMain(os, charts, duration) {
         head += '<div class="netdata-container" style="margin-right: 10px;" data-netdata="system.pgpgio"'
             + ' data-dimensions="out"'
             + ' data-chart-library="easypiechart"'
-            + ' data-title="磁碟寫入"'
+            + ' data-title="磁碟写入"'
             + ' data-width="11%"'
             + ' data-before="0"'
             + ' data-after="-' + duration.toString() + '"'
@@ -1510,7 +1510,7 @@ function headMain(os, charts, duration) {
         head += '<div class="netdata-container" style="margin-right: 10px;" data-netdata="system.net"'
             + ' data-dimensions="received"'
             + ' data-chart-library="easypiechart"'
-            + ' data-title="網路流入"'
+            + ' data-title="网路流入"'
             + ' data-width="11%"'
             + ' data-before="0"'
             + ' data-after="-' + duration.toString() + '"'
@@ -1521,7 +1521,7 @@ function headMain(os, charts, duration) {
         head += '<div class="netdata-container" style="margin-right: 10px;" data-netdata="system.net"'
             + ' data-dimensions="sent"'
             + ' data-chart-library="easypiechart"'
-            + ' data-title="網路流出"'
+            + ' data-title="网路流出"'
             + ' data-width="11%"'
             + ' data-before="0"'
             + ' data-after="-' + duration.toString() + '"'
@@ -1606,7 +1606,7 @@ function headMain(os, charts, duration) {
             + ' data-dimensions="used|buffers|active|wired"' // active and wired are FreeBSD stats
             + ' data-append-options="percentage"'
             + ' data-chart-library="easypiechart"'
-            + ' data-title="記憶體"'
+            + ' data-title="记忆体"'
             + ' data-units="%"'
             + ' data-easypiechart-max-value="100"'
             + ' data-width="9%"'
@@ -1757,9 +1757,9 @@ function renderPage(menus, data) {
         html += mhead + shtml + '</div></div><hr role="separator"/>';
     }
 
-    sidebar += '<li class="" style="padding-top:15px;"><a href="https://github.com/netdata/netdata/blob/master/docs/Add-more-charts-to-netdata.md#add-more-charts-to-netdata" target="_blank"><i class="fas fa-plus"></i> 加入更多圖表</a></li>';
-    sidebar += '<li class=""><a href="https://github.com/netdata/netdata/tree/master/health#Health-monitoring" target="_blank"><i class="fas fa-plus"></i> 加入更多警報</a></li>';
-    sidebar += '<li class="" style="margin:20px;color:#666;"><small>netdata 運作於 <b>' + data.hostname.toString() + '</b>, 每 ' + ((data.update_every === 1) ? '秒' : data.update_every.toString() + ' 秒') + ' 搜集 <b>' + data.dimensions_count.toLocaleString() + '</b> 項指標，提供 <b>' + data.charts_count.toLocaleString() + '</b> 張圖表以及監視 <b>' + data.alarms_count.toLocaleString() + '</b> 個警報，使用 ' + Math.round(data.rrd_memory_bytes / 1024 / 1024).toLocaleString() + ' MB 記憶體儲存 ' + NETDATA.seconds4human(data.update_every * data.history, {space: '&nbsp;'}) + ' 的即時資料。<br/>&nbsp;<br/><b>netdata</b><br/>' + data.version.toString() + '</small></li>';
+    sidebar += '<li class="" style="padding-top:15px;"><a href="https://github.com/netdata/netdata/blob/master/docs/Add-more-charts-to-netdata.md#add-more-charts-to-netdata" target="_blank"><i class="fas fa-plus"></i> 加入更多图表</a></li>';
+    sidebar += '<li class=""><a href="https://github.com/netdata/netdata/tree/master/health#Health-monitoring" target="_blank"><i class="fas fa-plus"></i> 加入更多警报</a></li>';
+    sidebar += '<li class="" style="margin:20px;color:#666;"><small>netdata 运作于 <b>' + data.hostname.toString() + '</b>, 每 ' + ((data.update_every === 1) ? '秒' : data.update_every.toString() + ' 秒') + ' 搜集 <b>' + data.dimensions_count.toLocaleString() + '</b> 项指标，提供 <b>' + data.charts_count.toLocaleString() + '</b> 张图表以及监视 <b>' + data.alarms_count.toLocaleString() + '</b> 个警报，使用 ' + Math.round(data.rrd_memory_bytes / 1024 / 1024).toLocaleString() + ' MB 记忆体储存 ' + NETDATA.seconds4human(data.update_every * data.history, {space: '&nbsp;'}) + ' 的即时资料。<br/>&nbsp;<br/><b>netdata</b><br/>' + data.version.toString() + '</small></li>';
     sidebar += '</ul>';
     div.innerHTML = html;
     document.getElementById('sidebar').innerHTML = sidebar;
@@ -1960,9 +1960,9 @@ function clipboardCopyBadgeEmbed(url) {
 // ----------------------------------------------------------------------------
 
 function alarmsUpdateModal() {
-    var active = '<h3>觸發警報</h3><table class="table">';
-    var all = '<h3>所有作用中的警報</h3><div class="panel-group" id="alarms_all_accordion" role="tablist" aria-multiselectable="true">';
-    var footer = '<hr/><a href="https://github.com/netdata/netdata/tree/master/web/api/badges#netdata-badges" target="_blank">netdata badges</a> 會自動重新整理。不同顏色分表代表的警報狀態：<span style="color: #e05d44"><b>&nbsp;紅色&nbsp;</b></span> 表示重大，<span style="color:#fe7d37"><b>&nbsp;橘色&nbsp;</b></span> 表示警告，<span style="color: #4c1"><b>&nbsp;綠色&nbsp;</b></span> 表示良好，<span style="color: #9f9f9f"><b>&nbsp;灰色&nbsp;</b></span> 表示未定義 (例如無資料或無狀態)，<span style="color: #000"><b>&nbsp;黑色&nbsp;</b></span> 表示尚未初始化。您可以複製這裡的網址並將它們嵌入到任一個網頁。<br/>netdata 能夠發送這些警報通知。請參閱 <a href="https://github.com/netdata/netdata/blob/master/health/notifications/health_alarm_notify.conf">這個設定檔</a> 了解更多資訊。';
+    var active = '<h3>触发警报</h3><table class="table">';
+    var all = '<h3>所有作用中的警报</h3><div class="panel-group" id="alarms_all_accordion" role="tablist" aria-multiselectable="true">';
+    var footer = '<hr/><a href="https://github.com/netdata/netdata/tree/master/web/api/badges#netdata-badges" target="_blank">netdata badges</a> 会自动重新整理。不同颜色分表代表的警报状态：<span style="color: #e05d44"><b>&nbsp;红色&nbsp;</b></span> 表示重大，<span style="color:#fe7d37"><b>&nbsp;橘色&nbsp;</b></span> 表示警告，<span style="color: #4c1"><b>&nbsp;绿色&nbsp;</b></span> 表示良好，<span style="color: #9f9f9f"><b>&nbsp;灰色&nbsp;</b></span> 表示未定义 (例如无资料或无状态)，<span style="color: #000"><b>&nbsp;黑色&nbsp;</b></span> 表示尚未初始化。您可以复制这里的网址并将它们嵌入到任一个网页。<br/>netdata 能够发送这些警报通知。请参阅 <a href="https://github.com/netdata/netdata/blob/master/health/notifications/health_alarm_notify.conf">这个设定档</a> 了解更多资讯。';
 
     loadClipboard(function () {
     });
@@ -2263,7 +2263,7 @@ function alarmsUpdateModal() {
             $('#alarm_all_' + id.toString()).html('');
         });
 
-        document.getElementById('alarms_log').innerHTML = '<h3>警報記錄</h3><table id="alarms_log_table"></table>';
+        document.getElementById('alarms_log').innerHTML = '<h3>警报记录</h3><table id="alarms_log_table"></table>';
 
         loadBootstrapTable(function () {
             $('#alarms_log_table').bootstrapTable({
@@ -2323,7 +2323,7 @@ function alarmsUpdateModal() {
                     },
                     {
                         field: 'hostname',
-                        title: '主機',
+                        title: '主机',
                         valign: 'middle',
                         titleTooltip: 'The host that generated this event',
                         align: 'center',
@@ -2346,7 +2346,7 @@ function alarmsUpdateModal() {
                     },
                     {
                         field: 'alarm_id',
-                        title: '警報 ID',
+                        title: '警报 ID',
                         titleTooltip: 'The ID of the alarm that generated this event',
                         formatter: function (value, row, index) {
                             void (row);
@@ -2360,7 +2360,7 @@ function alarmsUpdateModal() {
                     },
                     {
                         field: 'alarm_event_id',
-                        title: '警報事件 ID',
+                        title: '警报事件 ID',
                         titleTooltip: 'The incremental ID of this event for the given alarm',
                         formatter: function (value, row, index) {
                             void (row);
@@ -2374,7 +2374,7 @@ function alarmsUpdateModal() {
                     },
                     {
                         field: 'chart',
-                        title: '圖表',
+                        title: '图表',
                         titleTooltip: 'The chart the alarm is attached to',
                         align: 'center',
                         valign: 'middle',
@@ -2392,7 +2392,7 @@ function alarmsUpdateModal() {
                     },
                     {
                         field: 'name',
-                        title: '警報',
+                        title: '警报',
                         titleTooltip: 'The alarm name that generated this event',
                         formatter: function (value, row, index) {
                             void (row);
@@ -2451,7 +2451,7 @@ function alarmsUpdateModal() {
                     },
                     {
                         field: 'units',
-                        title: '單位',
+                        title: '单位',
                         titleTooltip: 'The units of the value of the alarm',
                         align: 'left',
                         valign: 'middle',
@@ -2460,7 +2460,7 @@ function alarmsUpdateModal() {
                     },
                     {
                         field: 'old_status',
-                        title: '先前狀態',
+                        title: '先前状态',
                         titleTooltip: 'The status of the alarm, just before this event',
                         align: 'center',
                         valign: 'middle',
@@ -2469,7 +2469,7 @@ function alarmsUpdateModal() {
                     },
                     {
                         field: 'status',
-                        title: '狀態',
+                        title: '状态',
                         titleTooltip: 'The status of the alarm, that was set due to this event',
                         align: 'center',
                         valign: 'middle',
@@ -2652,7 +2652,7 @@ function alarmsUpdateModal() {
                     },
                     {
                         field: 'info',
-                        title: '說明',
+                        title: '说明',
                         titleTooltip: 'A short description of the alarm',
                         align: 'center',
                         valign: 'middle',
@@ -2661,7 +2661,7 @@ function alarmsUpdateModal() {
                     },
                     {
                         field: 'source',
-                        title: '警報來源',
+                        title: '警报来源',
                         titleTooltip: 'The source of configuration of the alarm',
                         align: 'center',
                         valign: 'middle',
@@ -2720,7 +2720,7 @@ function initializeDynamicDashboardWithData(data) {
         }
 
         // update the dashboard title
-        document.title = options.hostname + ' netdata 儀表板';
+        document.title = options.hostname + ' netdata 仪表板';
 
         // close the splash screen
         $("#loadOverlay").css("display", "none");
@@ -2842,7 +2842,7 @@ function versionsMatch(v1, v2) {
 }
 
 function getGithubLatestVersion(callback) {
-    versionLog('正在從 github 下載最新版本 ID...');
+    versionLog('正在从 github 下载最新版本 ID...');
 
     $.ajax({
         url: 'https://api.github.com/repositories/10744183/contents/packaging/version?ref=master',
@@ -2851,11 +2851,11 @@ function getGithubLatestVersion(callback) {
     })
         .done(function (data) {
             data = atob(data.content).replace(/(\r\n|\n|\r| |\t)/gm, "");
-            versionLog('從 github 取得最新版本是 ' + data);
+            versionLog('从 github 取得最新版本是 ' + data);
             callback(data);
         })
         .fail(function () {
-            versionLog('從 github 下載最新版本 ID 失敗。');
+            versionLog('从 github 下载最新版本 ID 失败。');
             callback(null);
         });
 }
@@ -2869,7 +2869,7 @@ function checkForUpdateByVersion(force, callback) {
 }
 
 function notifyForUpdate(force) {
-    versionLog('<p>正在檢查更新...</p>');
+    versionLog('<p>正在检查更新...</p>');
 
     var now = Date.now();
 
@@ -2893,13 +2893,13 @@ function notifyForUpdate(force) {
 
         if (sha1 === null) {
             save = false;
-            versionLog('<p><big>取得您的 netdata 版本失敗！</big></p><p>You can always get the latest netdata from <a href="https://github.com/netdata/netdata" target="_blank">its github page</a>.</p>');
+            versionLog('<p><big>取得您的 netdata 版本失败！</big></p><p>You can always get the latest netdata from <a href="https://github.com/netdata/netdata" target="_blank">its github page</a>.</p>');
         } else if (sha2 === null) {
             save = false;
-            versionLog('<p><big>從 github 取得 netdata 最新版本失敗。</big></p><p>您也可以從 <a href="https://github.com/netdata/netdata" target="_blank"> github</a> 取得最新 netdata 版本。</p>');
+            versionLog('<p><big>从 github 取得 netdata 最新版本失败。</big></p><p>您也可以从 <a href="https://github.com/netdata/netdata" target="_blank"> github</a> 取得最新 netdata 版本。</p>');
         } else if (versionsMatch(sha1, sha2)) {
             save = true;
-            versionLog('<p><big>您已經是最新版本的 netdata！</big></p><p>還沒有更新？<br/>或許，我們還需要一些動力繼續前進！</p><p>如果您還沒有做好更新的準備，請您 <a href="https://github.com/netdata/netdata" target="_blank">到 github 給 netdata <b><i class="fas fa-star"></i></b></a>。</p>');
+            versionLog('<p><big>您已经是最新版本的 netdata！</big></p><p>还没有更新？<br/>或许，我们还需要一些动力继续前进！</p><p>如果您还没有做好更新的准备，请您 <a href="https://github.com/netdata/netdata" target="_blank">到 github 给 netdata <b><i class="fas fa-star"></i></b></a>。</p>');
         } else {
             save = true;
             var compare = 'https://docs.netdata.cloud/changelog/';

@@ -142,15 +142,15 @@ NETDATA.zeropad = function (x) {
 
 NETDATA.seconds4human = function (seconds, options) {
     let defaultOptions = {
-        now: '現在',
+        now: '现在',
         space: ' ',
         negative_suffix: '前',
         day: '日',
         days: '日',
-        hour: '小時',
-        hours: '小時',
-        minute: '分鐘',
-        minutes: '分鐘',
+        hour: '小时',
+        hours: '小时',
+        minute: '分钟',
+        minutes: '分钟',
         second: '秒',
         seconds: '秒',
         and: '及'

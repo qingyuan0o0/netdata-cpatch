@@ -12,15 +12,15 @@ var netdataDashboard = window.netdataDashboard || {};
 
 netdataDashboard.menu = {
     'system': {
-        title: '系統概觀',
+        title: '系统概观',
         icon: '<i class="fas fa-bookmark"></i>',
-        info: '一眼掌握系統效能關鍵指標。'
+        info: '一眼掌握系统效能关键指标。'
     },
 
     'services': {
-        title: '系統服務',
+        title: '系统服务',
         icon: '<i class="fas fa-cogs"></i>',
-        info: '系統服務的使用情況。netdata 以 CGROUPS 監視所有系統服務。'
+        info: '系统服务的使用情况。netdata 以 CGROUPS 监视所有系统服务。'
     },
 
     'ap': {
@@ -44,13 +44,13 @@ netdataDashboard.menu = {
     },
 
     'net': {
-        title: '網路介面',
+        title: '网路介面',
         icon: '<i class="fas fa-sitemap"></i>',
-        info: '網路介面的效能指標。'
+        info: '网路介面的效能指标。'
     },
 
     'ip': {
-        title: '網路堆疊',
+        title: '网路堆叠',
         icon: '<i class="fas fa-cloud"></i>',
         info: function (os) {
             if(os === "linux")
@@ -61,9 +61,9 @@ netdataDashboard.menu = {
     },
 
     'ipv4': {
-        title: 'IPv4 網路',
+        title: 'IPv4 网路',
         icon: '<i class="fas fa-cloud"></i>',
-        info: 'IPv4 效能指標。' +
+        info: 'IPv4 效能指标。' +
             '<a href="https://en.wikipedia.org/wiki/IPv4" target="_blank">Internet Protocol version 4 (IPv4)</a> is ' +
             'the fourth version of the Internet Protocol (IP). It is one of the core protocols of standards-based ' +
             'internetworking methods in the Internet. IPv4 is a connectionless protocol for use on packet-switched ' +
@@ -73,9 +73,9 @@ netdataDashboard.menu = {
     },
 
     'ipv6': {
-        title: 'IPv6 網路',
+        title: 'IPv6 网路',
         icon: '<i class="fas fa-cloud"></i>',
-        info: 'IPv6 效能指標。 <a href="https://en.wikipedia.org/wiki/IPv6" target="_blank">Internet Protocol version 6 (IPv6)</a> is the most recent version of the Internet Protocol (IP), the communications protocol that provides an identification and location system for computers on networks and routes traffic across the Internet. IPv6 was developed by the Internet Engineering Task Force (IETF) to deal with the long-anticipated problem of IPv4 address exhaustion. IPv6 is intended to replace IPv4.'
+        info: 'IPv6 效能指标。 <a href="https://en.wikipedia.org/wiki/IPv6" target="_blank">Internet Protocol version 6 (IPv6)</a> is the most recent version of the Internet Protocol (IP), the communications protocol that provides an identification and location system for computers on networks and routes traffic across the Internet. IPv6 was developed by the Internet Engineering Task Force (IETF) to deal with the long-anticipated problem of IPv4 address exhaustion. IPv6 is intended to replace IPv4.'
     },
 
     'sctp': {
@@ -91,13 +91,13 @@ netdataDashboard.menu = {
     },
 
     'netfilter': {
-        title: '防火牆 (netfilter)',
+        title: '防火墙 (netfilter)',
         icon: '<i class="fas fa-shield-alt"></i>',
-        info: 'netfilter 元件效能指標。'
+        info: 'netfilter 元件效能指标。'
     },
 
     'ipfw': {
-        title: '防火牆 (ipfw)',
+        title: '防火墙 (ipfw)',
         icon: '<i class="fas fa-shield-alt"></i>',
         info: 'Counters and memory usage for the ipfw rules.'
     },
@@ -105,25 +105,25 @@ netdataDashboard.menu = {
     'cpu': {
         title: 'CPU',
         icon: '<i class="fas fa-bolt"></i>',
-        info: '系統中每一個 CPU 的詳細資訊。全部 CPU 的總量可以到 <a href="#menu_system">系統概觀</a> 區段查看。'
+        info: '系统中每一个 CPU 的详细资讯。全部 CPU 的总量可以到 <a href="#menu_system">系统概观</a> 区段查看。'
     },
 
     'mem': {
-        title: '記憶體',
+        title: '记忆体',
         icon: '<i class="fas fa-microchip"></i>',
-        info: '系統記憶體管理的詳細資訊。'
+        info: '系统记忆体管理的详细资讯。'
     },
 
     'disk': {
         title: '磁碟',
         icon: '<i class="fas fa-hdd"></i>',
-        info: '系統中所有磁碟效能資訊圖表。特別留意：這是以 <code>iostat -x</code> 所取得的效能數據做為呈現。在預設情況下，netdata 不會顯示單一分割區與未掛載的虛擬磁碟效能圖表。若仍想要顯示，可以修改 netdata 設定檔中的相關設定。'
+        info: '系统中所有磁碟效能资讯图表。特别留意：这是以 <code>iostat -x</code> 所取得的效能数据做为呈现。在预设情况下，netdata 不会显示单一分割区与未挂载的虚拟磁碟效能图表。若仍想要显示，可以修改 netdata 设定档中的相关设定。'
     },
 
     'sensors': {
-        title: '感測器',
+        title: '感测器',
         icon: '<i class="fas fa-leaf"></i>',
-        info: '系統已配置相關感測器的讀數'
+        info: '系统已配置相关感测器的读数'
     },
 
     'ipmi': {
@@ -145,25 +145,25 @@ netdataDashboard.menu = {
     },
 
     'nfs': {
-        title: 'NFS 客戶端',
+        title: 'NFS 客户端',
         icon: '<i class="fas fa-folder-open"></i>',
-        info: '顯示本機做為 NFS 客戶端的效能指標。'
+        info: '显示本机做为 NFS 客户端的效能指标。'
     },
 
     'zfs': {
-        title: 'ZFS 檔案系統',
+        title: 'ZFS 档案系统',
         icon: '<i class="fas fa-folder-open"></i>',
-        info: 'ZFS 檔案系統的效能指標。以下圖表呈現來自 <a href="https://github.com/zfsonlinux/zfs/blob/master/cmd/arcstat/arcstat.py" target="_blank">arcstat.py</a> 與 <a href="https://github.com/zfsonlinux/zfs/blob/master/cmd/arc_summary/arc_summary.py" target="_blank">arc_summary.py</a> 的效能數據。'
+        info: 'ZFS 档案系统的效能指标。以下图表呈现来自 <a href="https://github.com/zfsonlinux/zfs/blob/master/cmd/arcstat/arcstat.py" target="_blank">arcstat.py</a> 与 <a href="https://github.com/zfsonlinux/zfs/blob/master/cmd/arc_summary/arc_summary.py" target="_blank">arc_summary.py</a> 的效能数据。'
     },
 
     'btrfs': {
-        title: 'BTRFS 檔案系統',
+        title: 'BTRFS 档案系统',
         icon: '<i class="fas fa-folder-open"></i>',
-        info: 'BTRFS 檔案系統磁碟空間使用指標。'
+        info: 'BTRFS 档案系统磁碟空间使用指标。'
     },
 
     'apps': {
-        title: '應用程序',
+        title: '应用程序',
         icon: '<i class="fas fa-heartbeat"></i>',
         info: 'Per application statistics are collected using netdata\'s <code>apps.plugin</code>. This plugin walks through all processes and aggregates statistics for applications of interest, defined in <code>/etc/netdata/apps_groups.conf</code>, which can be edited by running <code>$ /etc/netdata/edit-config apps_groups.conf</code> (the default is <a href="https://github.com/netdata/netdata/blob/master/collectors/apps.plugin/apps_groups.conf" target="_blank">here</a>). The plugin internally builds a process tree (much like <code>ps fax</code> does), and groups processes together (evaluating both child and parent processes) so that the result is always a chart with a predefined set of dimensions (of course, only application groups found running are reported). The reported values are compatible with <code>top</code>, although the netdata plugin counts also the resources of exited children (unlike <code>top</code> which shows only the resources of the currently running processes). So for processes like shell scripts, the reported values include the resources used by the commands these scripts run within each timeframe.',
         height: 1.5
@@ -177,33 +177,33 @@ netdataDashboard.menu = {
     },
 
     'groups': {
-        title: '使用者群組',
+        title: '使用者群组',
         icon: '<i class="fas fa-users"></i>',
         info: 'Per user group statistics are collected using netdata\'s <code>apps.plugin</code>. This plugin walks through all processes and aggregates statistics per user group. The reported values are compatible with <code>top</code>, although the netdata plugin counts also the resources of exited children (unlike <code>top</code> which shows only the resources of the currently running processes). So for processes like shell scripts, the reported values include the resources used by the commands these scripts run within each timeframe.',
         height: 1.5
     },
 
     'netdata': {
-        title: 'Netdata 監視',
+        title: 'Netdata 监视',
         icon: '<i class="fas fa-chart-bar"></i>',
-        info: 'netdata 本身與外掛程式的效能數據。'
+        info: 'netdata 本身与外挂程式的效能数据。'
     },
 
     'example': {
-        title: '範例圖表',
-        info: '範例圖表，展示外掛程式的架構之用。'
+        title: '范例图表',
+        info: '范例图表，展示外挂程式的架构之用。'
     },
 
     'cgroup': {
         title: '',
         icon: '<i class="fas fa-th"></i>',
-        info: '容器資源使用率指標。netdata 從 <b>cgroups</b> (<b>control groups</b> 的縮寫) 中讀取這些資訊，cgroups 是 Linux 核心的一個功能，做限制與計算程序集中的資源使用率 (CPU、記憶體、磁碟 I/O、網路...等等)。<b>cgroups</b> 與 <b>namespaces</b> (程序之間的隔離) 結合提供了我們所說的：<b>容器</b>。'
+        info: '容器资源使用率指标。netdata 从 <b>cgroups</b> (<b>control groups</b> 的缩写) 中读取这些资讯，cgroups 是 Linux 核心的一个功能，做限制与计算程序集中的资源使用率 (CPU、记忆体、磁碟 I/O、网路...等等)。<b>cgroups</b> 与 <b>namespaces</b> (程序之间的隔离) 结合提供了我们所说的：<b>容器</b>。'
     },
 
     'cgqemu': {
         title: '',
         icon: '<i class="fas fa-th-large"></i>',
-        info: 'QEMU 虛擬機資源使用率效能指標。QEMU (Quick Emulator) 是自由與開源的虛擬機器平台，提供硬體虛擬化功能。'
+        info: 'QEMU 虚拟机资源使用率效能指标。QEMU (Quick Emulator) 是自由与开源的虚拟机器平台，提供硬体虚拟化功能。'
     },
 
     'fping': {
@@ -454,12 +454,12 @@ netdataDashboard.menu = {
 // information about the submenus
 netdataDashboard.submenu = {
     'web_log.squid_bandwidth': {
-        title: '頻寬',
+        title: '频宽',
         info: 'Bandwidth of responses (<code>sent</code>) by squid. This chart may present unusual spikes, since the bandwidth is accounted at the time the log line is saved by the server, even if the time needed to serve it spans across a longer duration. We suggest to use QoS (e.g. <a href="http://firehol.org/#fireqos" target="_blank">FireQOS</a>) for accurate accounting of the server bandwidth.'
     },
 
     'web_log.squid_responses': {
-        title: '回應',
+        title: '回应',
         info: 'Information related to the responses sent by squid.'
     },
 
@@ -509,7 +509,7 @@ netdataDashboard.submenu = {
 
     'mem.ksm': {
         title: 'deduper (ksm)',
-        info: 'Kernel Same-page Merging (KSM) 效能監視，經由讀取 <code>/sys/kernel/mm/ksm/</code> 下的檔案而來。KSM 是在 Linux 核心 (自 2.6.32 版起) 內含的一種節省記憶體使用率重複資料刪除功能。)。 KSM 服務程序 ksmd 會定期掃描記憶體區域，尋找正有資料要更新進來且相同資料存在的分頁。KSM 最初是從 KVM 專案開發中而來，利用這種共用相同資料的機制，即可以讓更多的虛擬機器放到記憶體中。另外，對許多會產生同樣內容的應用程序來說，這個功能是相當有效益的。'
+        info: 'Kernel Same-page Merging (KSM) 效能监视，经由读取 <code>/sys/kernel/mm/ksm/</code> 下的档案而来。KSM 是在 Linux 核心 (自 2.6.32 版起) 内含的一种节省记忆体使用率重复资料删除功能。)。 KSM 服务程序 ksmd 会定期扫描记忆体区域，寻找正有资料要更新进来且相同资料存在的分页。KSM 最初是从 KVM 专案开发中而来，利用这种共用相同资料的机制，即可以让更多的虚拟机器放到记忆体中。另外，对许多会产生同样内容的应用程序来说，这个功能是相当有效益的。'
     },
 
     'mem.hugepages': {
@@ -517,7 +517,7 @@ netdataDashboard.submenu = {
     },
 
     'mem.numa': {
-        info: 'Non-Uniform Memory Access (NUMA) 是一種記憶體存取分隔設計，在 NUMA 之下，一個處理器存取自己管理的的記憶體，將比非自己管理的記憶體 (另一個處理器所管理的記憶體或是共用記憶體) 具有更快速的效能。在 <a href="https://www.kernel.org/doc/Documentation/numastat.txt" target="_blank">Linux 核心文件</a> 中有詳細說明這些指標。'
+        info: 'Non-Uniform Memory Access (NUMA) 是一种记忆体存取分隔设计，在 NUMA 之下，一个处理器存取自己管理的的记忆体，将比非自己管理的记忆体 (另一个处理器所管理的记忆体或是共用记忆体) 具有更快速的效能。在 <a href="https://www.kernel.org/doc/Documentation/numastat.txt" target="_blank">Linux 核心文件</a> 中有详细说明这些指标。'
     },
 
     'ip.ecn': {
@@ -526,7 +526,7 @@ netdataDashboard.submenu = {
 
     'netfilter.conntrack': {
         title: 'connection tracker',
-        info: 'Netfilter connection tracker 效能指標。Connection tracker 會追蹤這台主機上所有的連接，包括流入與流出。工作原理是將所有開啟的連接都儲存到資料庫，以追蹤網路、位址轉換與連接目標。'
+        info: 'Netfilter connection tracker 效能指标。Connection tracker 会追踪这台主机上所有的连接，包括流入与流出。工作原理是将所有开启的连接都储存到资料库，以追踪网路、位址转换与连接目标。'
     },
 
     'netfilter.nfacct': {
@@ -625,109 +625,109 @@ netdataDashboard.context = {
     'system.cpu': {
         info: function (os) {
             void(os);
-            return 'CPU 使用率總表 (全部核心)。 當數值為 100% 時，表示您的 CPU 非常忙碌沒有閒置空間。您可以在 <a href="#menu_cpu">CPU</a> 區段及以及 <a href="#menu_apps">應用程序</a> 區段深入了解每個核心與應用程序的使用情況。'
-                + netdataDashboard.sparkline('<br/>請特別關注 <b>iowait</b> ', 'system.cpu', 'iowait', '%', '，如果它一直處於較高的情況，這表示您的磁碟是效能瓶頸，您的系統效能會明顯降低。')
-                + netdataDashboard.sparkline('<br/>另一個重要的指標是 <b>softirq</b> ', 'system.cpu', 'softirq', '%', '，若這個數值持續在較高的情況，很有可能是您的網路驅動部份有問題。');
+            return 'CPU 使用率总表 (全部核心)。 当数值为 100% 时，表示您的 CPU 非常忙碌没有閒置空间。您可以在 <a href="#menu_cpu">CPU</a> 区段及以及 <a href="#menu_apps">应用程序</a> 区段深入了解每个核心与应用程序的使用情况。'
+                + netdataDashboard.sparkline('<br/>请特别关注 <b>iowait</b> ', 'system.cpu', 'iowait', '%', '，如果它一直处于较高的情况，这表示您的磁碟是效能瓶颈，您的系统效能会明显降低。')
+                + netdataDashboard.sparkline('<br/>另一个重要的指标是 <b>softirq</b> ', 'system.cpu', 'softirq', '%', '，若这个数值持续在较高的情况，很有可能是您的网路驱动部份有问题。');
         },
         valueRange: "[0, 100]"
     },
 
     'system.load': {
-        info: '目前系統負載，也就是指 CPU 使用情況或正在等待系統資源 (通常是 CPU 與磁碟)。這三個指標分別是 1、5、15 分鐘。系統每 5 秒會計算一次。更多的資訊可以參閱 <a href="https://en.wikipedia.org/wiki/Load_(computing)" target="_blank">維基百科</a> 說明。',
+        info: '目前系统负载，也就是指 CPU 使用情况或正在等待系统资源 (通常是 CPU 与磁碟)。这三个指标分别是 1、5、15 分钟。系统每 5 秒会计算一次。更多的资讯可以参阅 <a href="https://en.wikipedia.org/wiki/Load_(computing)" target="_blank">维基百科</a> 说明。',
         height: 0.7
     },
 
     'system.io': {
         info: function (os) {
-            var s = '磁碟 I/O 總計, 包含所有的實體磁碟。您可以在 <a href="#menu_disk">磁碟</a> 區段查看每一個磁碟的詳細資訊，也可以在 <a href="#menu_apps">應用程序</a> 區段了解每一支應用程序對於磁碟的使用情況。';
+            var s = '磁碟 I/O 总计, 包含所有的实体磁碟。您可以在 <a href="#menu_disk">磁碟</a> 区段查看每一个磁碟的详细资讯，也可以在 <a href="#menu_apps">应用程序</a> 区段了解每一支应用程序对于磁碟的使用情况。';
 
             if (os === 'linux')
-                return s + ' 實體磁碟指的是 <code>/sys/block</code> 中有列出，但是沒有在 <code>/sys/devices/virtual/block</code> 的所有磁碟。';
+                return s + ' 实体磁碟指的是 <code>/sys/block</code> 中有列出，但是没有在 <code>/sys/devices/virtual/block</code> 的所有磁碟。';
             else
                 return s;
         }
     },
 
     'system.pgpgio': {
-        info: '從記憶體分頁到磁碟的 I/O。通常是這個系統所有磁碟的總 I/O。'
+        info: '从记忆体分页到磁碟的 I/O。通常是这个系统所有磁碟的总 I/O。'
     },
 
     'system.swapio': {
-        info: '所有的 Swap I/O. (netdata 會合併顯示 <code>輸入</code> 與 <code>輸出</code>。如果圖表中沒有任何數值，則表示為 0。 - 您可以修改這一頁的設定，讓圖表顯示固定的維度。'
+        info: '所有的 Swap I/O. (netdata 会合并显示 <code>输入</code> 与 <code>输出</code>。如果图表中没有任何数值，则表示为 0。 - 您可以修改这一页的设定，让图表显示固定的维度。'
     },
 
     'system.pgfaults': {
-        info: '所有的 Page 錯誤. <b>Major page faults</b> indicates that the system is using its swap. You can find which applications use the swap at the <a href="#menu_apps">Applications Monitoring</a> section.'
+        info: '所有的 Page 错误. <b>Major page faults</b> indicates that the system is using its swap. You can find which applications use the swap at the <a href="#menu_apps">Applications Monitoring</a> section.'
     },
 
     'system.entropy': {
         colors: '#CC22AA',
-        info: '<a href="https://en.wikipedia.org/wiki/Entropy_(computing)" target="_blank">熵 (Entropy)</a>，主要是用在密碼學的亂數集區 (<a href="https://en.wikipedia.org/wiki//dev/random" target="_blank">/dev/random</a>)。如果熵的集區為空，需要亂數的程序可能會導致執行變慢 (這取決於每個程序使用的介面)，等待集區補充。在理想情況下，有高度熵需求的系統應該要具備專用的硬體裝置 (例如 TPM 裝置)。您也可以安裝純軟體的方案，例如 <code>haveged</code>，通常這些方案只會使用在伺服器上。'
+        info: '<a href="https://en.wikipedia.org/wiki/Entropy_(computing)" target="_blank">熵 (Entropy)</a>，主要是用在密码学的乱数集区 (<a href="https://en.wikipedia.org/wiki//dev/random" target="_blank">/dev/random</a>)。如果熵的集区为空，需要乱数的程序可能会导致执行变慢 (这取决于每个程序使用的介面)，等待集区补充。在理想情况下，有高度熵需求的系统应该要具备专用的硬体装置 (例如 TPM 装置)。您也可以安装纯软体的方案，例如 <code>haveged</code>，通常这些方案只会使用在伺服器上。'
     },
 
     'system.forks': {
         colors: '#5555DD',
-        info: '建立新程序的數量。'
+        info: '建立新程序的数量。'
     },
 
     'system.intr': {
         colors: '#DD5555',
-        info: 'CPU 中斷的總數。透過檢查 <code>system.interrupts</code>，得知每一個中斷的細節資訊。在 <a href="#menu_cpu">CPU</a> 區段提供每一個 CPU 核心的中斷情形。'
+        info: 'CPU 中断的总数。透过检查 <code>system.interrupts</code>，得知每一个中断的细节资讯。在 <a href="#menu_cpu">CPU</a> 区段提供每一个 CPU 核心的中断情形。'
     },
 
     'system.interrupts': {
-        info: 'CPU 中斷的細節。在 <a href="#menu_cpu">CPU</a> 區段中，依據每個 CPU 核心分析中斷。'
+        info: 'CPU 中断的细节。在 <a href="#menu_cpu">CPU</a> 区段中，依据每个 CPU 核心分析中断。'
     },
 
     'system.softirqs': {
-        info: 'CPU softirqs 的細節。在 <a href="#menu_cpu">CPU</a> 區段中，依據每個 CPU 核心分析 softirqs。'
+        info: 'CPU softirqs 的细节。在 <a href="#menu_cpu">CPU</a> 区段中，依据每个 CPU 核心分析 softirqs。'
     },
 
     'system.processes': {
-        info: '系統程序。<b>running</b> 顯示正在 CPU 中的程序。<b>Blocked</b> 顯示目前被擋下無法進入 CPU 執行的程序，例如：正在等待磁碟完成動作，才能繼續。'
+        info: '系统程序。<b>running</b> 显示正在 CPU 中的程序。<b>Blocked</b> 显示目前被挡下无法进入 CPU 执行的程序，例如：正在等待磁碟完成动作，才能继续。'
     },
 
     'system.active_processes': {
-        info: '所有的系統程序。'
+        info: '所有的系统程序。'
     },
 
     'system.ctxt': {
-        info: '<a href="https://en.wikipedia.org/wiki/Context_switch" target="_blank">Context Switches</a>，指 CPU 從一個程序、工作或是執行緒切換到另一個程序、工作或是執行緒。如果有許多程序或執行緒需要執行，但可以使用的 CPU 核心很少，即表示系統將會進行更多的 context switching 用來平衡它們所使用的 CPU 資源。這個過程需要大量的運算，因此 context switches 越多，整個系統就會越慢。'
+        info: '<a href="https://en.wikipedia.org/wiki/Context_switch" target="_blank">Context Switches</a>，指 CPU 从一个程序、工作或是执行绪切换到另一个程序、工作或是执行绪。如果有许多程序或执行绪需要执行，但可以使用的 CPU 核心很少，即表示系统将会进行更多的 context switching 用来平衡它们所使用的 CPU 资源。这个过程需要大量的运算，因此 context switches 越多，整个系统就会越慢。'
     },
 
     'system.idlejitter': {
-        info: 'Idle jitter 是由 netdata 計算而得。當一個執行緒要求睡眠 (Sleep) 時，需要幾個微秒的時間。當系統要喚醒它時，會量測它用了多少個微秒的時間。要求睡眠與實際睡眠時間的差異就是 <b>idle jitter</b>。這個數字在即時的環境中非常有用，因為 CPU jitter 將會影響服務的品質 (例如 VoIP media gateways)。'
+        info: 'Idle jitter 是由 netdata 计算而得。当一个执行绪要求睡眠 (Sleep) 时，需要几个微秒的时间。当系统要唤醒它时，会量测它用了多少个微秒的时间。要求睡眠与实际睡眠时间的差异就是 <b>idle jitter</b>。这个数字在即时的环境中非常有用，因为 CPU jitter 将会影响服务的品质 (例如 VoIP media gateways)。'
     },
 
     'system.net': {
         info: function (os) {
-            var s = '所有實體網路介面的總頻寬。不包含 <code>lo</code>、VPN、網路橋接、IFB 裝置、介面聚合 (Bond).. 等。將合併顯示實體網路介面的頻寬使用情況。';
+            var s = '所有实体网路介面的总频宽。不包含 <code>lo</code>、VPN、网路桥接、IFB 装置、介面聚合 (Bond).. 等。将合并显示实体网路介面的频宽使用情况。';
 
             if (os === 'linux')
-                return s + ' 實體網路介面是指在 <code>/proc/net/dev</code> 有列出，但不在 <code>/sys/devices/virtual/net</code> 裡。';
+                return s + ' 实体网路介面是指在 <code>/proc/net/dev</code> 有列出，但不在 <code>/sys/devices/virtual/net</code> 里。';
             else
                 return s;
         }
     },
 
     'system.ip': {
-        info: 'IP 總流量。'
+        info: 'IP 总流量。'
     },
 
     'system.ipv4': {
-        info: 'IPv4 總流量。'
+        info: 'IPv4 总流量。'
     },
 
     'system.ipv6': {
-        info: 'IPv6 總流量。'
+        info: 'IPv6 总流量。'
     },
 
     'system.ram': {
-        info: '系統隨機存取記憶體 (也就是實體記憶體) 使用情況。'
+        info: '系统随机存取记忆体 (也就是实体记忆体) 使用情况。'
     },
 
     'system.swap': {
-        info: '系統交換空間 (Swap) 記憶體使用情況。Swap 空間會在實體記憶體 (RAM) 已滿的情況下使用。當系統記憶體已滿但還需要使用更多記憶體情況下，系統記憶體中的比較沒有異動的 Page 將會被移動到 Swap 空間 (通常是磁碟、磁碟分割區或是檔案)。'
+        info: '系统交换空间 (Swap) 记忆体使用情况。Swap 空间会在实体记忆体 (RAM) 已满的情况下使用。当系统记忆体已满但还需要使用更多记忆体情况下，系统记忆体中的比较没有异动的 Page 将会被移动到 Swap 空间 (通常是磁碟、磁碟分割区或是档案)。'
     },
 
     // ------------------------------------------------------------------------
@@ -788,15 +788,15 @@ netdataDashboard.context = {
 
     'mem.committed': {
         colors: NETDATA.colors[3],
-        info: 'Committed 記憶體，是指程序分配到的所有記憶體總計。'
+        info: 'Committed 记忆体，是指程序分配到的所有记忆体总计。'
     },
 
     'mem.available': {
-        info: '可用記憶體是由核心估算而來，也就是使用者空間程序可以使用的 RAM 總量，而不會造成交換 (Swap) 發生。'
+        info: '可用记忆体是由核心估算而来，也就是使用者空间程序可以使用的 RAM 总量，而不会造成交换 (Swap) 发生。'
     },
 
     'mem.writeback': {
-        info: '<b>Dirty</b> 是等待寫入磁碟的記憶體量。<b>Writeback</b> 是指有多少記憶體內容被主動寫入磁碟。'
+        info: '<b>Dirty</b> 是等待写入磁碟的记忆体量。<b>Writeback</b> 是指有多少记忆体内容被主动写入磁碟。'
     },
 
     'mem.kernel': {
@@ -1059,14 +1059,14 @@ netdataDashboard.context = {
 
     'disk.io': {
         heads: [
-            netdataDashboard.gaugeChart('讀取', '12%', 'reads'),
-            netdataDashboard.gaugeChart('寫入', '12%', 'writes')
+            netdataDashboard.gaugeChart('读取', '12%', 'reads'),
+            netdataDashboard.gaugeChart('写入', '12%', 'writes')
         ],
-        info: '磁碟傳輸資料的總計。'
+        info: '磁碟传输资料的总计。'
     },
 
     'disk.ops': {
-        info: '已完成的磁碟 I/O operations。提醒：實際上的 operations 數量可能更高，因為系統能夠將它們互相合併 (詳見 operations 圖表)。'
+        info: '已完成的磁碟 I/O operations。提醒：实际上的 operations 数量可能更高，因为系统能够将它们互相合并 (详见 operations 图表)。'
     },
 
     'disk.qops': {
@@ -1091,11 +1091,11 @@ netdataDashboard.context = {
     },
     'disk.await': {
         height: 0.5,
-        info: '對要提供服務的設備發出 I/O 請求平均時間。這包含了請求在佇列中所花費的時間以及實際提供服務的時間。'
+        info: '对要提供服务的设备发出 I/O 请求平均时间。这包含了请求在伫列中所花费的时间以及实际提供服务的时间。'
     },
 
     'disk.space': {
-        info: '磁碟空間使用率。系統會自動為 root 使用者做保留，以防止 root 使用者使用過多。'
+        info: '磁碟空间使用率。系统会自动为 root 使用者做保留，以防止 root 使用者使用过多。'
     },
     'disk.inodes': {
         info: 'inodes (or index nodes) are filesystem objects (e.g. files and directories). On many types of file system implementations, the maximum number of inodes is fixed at filesystem creation, limiting the maximum number of files the filesystem can hold. It is possible for a device to run out of inodes. When this happens, new files cannot be created on the device, even though there may be free space available.'
